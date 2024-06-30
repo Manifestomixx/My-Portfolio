@@ -36,6 +36,9 @@ const NavBar = () => {
               <NavLink to="Testimonial" className="text-decoration-none nav-text" onClick={closeHamburger}>
                 <li>Testimonials</li>
               </NavLink>
+              <NavLink to="Contact" className="text-decoration-none nav-text d-lg-none " onClick={closeHamburger}>
+                <li>Contact Me</li>
+              </NavLink>
             </ul>
           </div>
           <NavLink to="Contact" className="text-decoration-none">

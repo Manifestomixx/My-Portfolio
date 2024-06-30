@@ -77,3 +77,21 @@
         font-size: 20px;
     }
 }
+
+@media(min-width:412px){
+    input[type="text"]{
+        width: 370px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="email"]{
+        width: 370px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="phone"]{
+        width: 370px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+}
