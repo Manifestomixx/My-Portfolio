@@ -1,0 +1,79 @@
+/* Contact styling */
+
+
+@media (min-width:1200px){
+    input[type="text"]{
+        width: 450px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="email"]{
+        width: 450px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="phone"]{
+        width: 450px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="checkbox"]{
+       border-color: rgba(0, 0, 0, 0.601);
+        
+    }
+    
+    textarea{
+        border-radius: 5px;
+        padding: 15px;
+        resize: none !important;
+        
+    }
+    
+    .form-btn{
+        background-color:  rgba(94, 59, 238, 1);
+        border: none;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:1200px){
+    input[type="text"]{
+        width: 350px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="email"]{
+        width: 350px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="phone"]{
+        width: 350px;
+        border: 2px solid rgba(0, 0, 0, 0.381);
+        height: 70%;
+    }
+    input[type="checkbox"]{
+       border-color: rgba(0, 0, 0, 0.601);
+        
+    }
+    
+    textarea{
+        border-radius: 5px;
+        padding: 15px;
+        resize: none !important;
+        
+    }
+    
+    .form-btn{
+        background-color:  rgba(94, 59, 238, 1);
+        border: none;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}

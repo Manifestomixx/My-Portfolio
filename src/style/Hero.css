@@ -1,0 +1,78 @@
+.bg{
+  background-color: rgb(245, 252, 255); 
+}
+
+/* Desktop Screen */
+@media (min-width:1200px){
+  
+  .h6-text{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+       
+  }
+  
+  .h1-text{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+  }
+  
+  .p-text{
+      font-weight: 400;
+      font-style: normal;
+      font-size: 18px;
+       
+  }
+  
+  .hero-button{
+      background-color: rgb(94, 59, 238);
+      border: none;
+      color: rgba(255, 255, 255, 1);
+      padding: 10px 20px 10px 20px;
+      font-size: 17px;
+      border-radius: 8px; 
+  }
+}
+
+/* Tablet Screen */
+@media (max-width:1200px){
+  
+  .h6-text{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 13px;
+       
+  }
+  
+  .h1-text{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .p-text{
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+       
+  }
+  
+  .hero-button{
+      background-color: rgb(94, 59, 238);
+      border: none;
+      color: rgba(255, 255, 255, 1);
+      padding: 10px 20px 10px 20px;
+      font-size: 14px;
+      border-radius: 8px; 
+  }
+}
+
+@media (max-width:700px){
+  .mobile{
+   margin-top: 3rem;
+  }
+}
+
+
