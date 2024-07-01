@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import image from "../assets/Hero.png"
-import loading from "../assets/eos-icons--three-dots-loading.svg"
+import loading from "../assets/white-three-dots-loading (1).svg"
 import "../style/Hero.css"
 import About from './About'
 import Expertise from './Expertise'
