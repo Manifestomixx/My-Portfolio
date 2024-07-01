@@ -1,18 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import "../style/Navbar.css";
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
+  const navRef = useRef(null);
 
   const toggleHamburger = () => {
     setIsActive(!isActive);
   };
 
-  const closeHamburger = ()=>{
+  const closeHamburger = ()=> {
     setIsActive(false);
   };
+
+  useEffect(()=>{
+    const handleScroll = ()=> {
+      if (isActive) {
+        closeHamburger();
+      }
+    }
+
+    const handleClickOutside = ()=> {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        closeHamburger();
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+
+
+  },[isActive]);
 
   return (
     <>

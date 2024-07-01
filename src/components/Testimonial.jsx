@@ -12,7 +12,7 @@ const Testimonial = () => {
      <main className="container-fluid bg-testimonial">
         <section className="container py-5">
           <div className="my-5">
-            <h6 className='sub-head'>Clients Feedback</h6>
+            <h6 className='sub-head1'>Clients Feedback</h6>
             <h2 className="fw-bold mb-5 h2-text">Customer testimonials</h2>
           </div>
           <section className="d-md-flex gap-4 my-5 testimonial-box">

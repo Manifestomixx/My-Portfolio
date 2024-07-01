@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import image from "../assets/Hero.png"
+import loading from "../assets/eos-icons--three-dots-loading.svg"
 import "../style/Hero.css"
 import About from './About'
 import Expertise from './Expertise'
@@ -9,6 +11,18 @@ import Contact from './Contact'
 import Footer from '../layout/Footer'
 
 const Hero = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleButtonClick = ()=> {
+    setIsLoading(true);
+    setTimeout(()=>{
+      setIsLoading(false);
+      navigate("Contact");
+    },700);
+  }
+
+
   return (
     <>
     <main className='container-fluid bg '>
@@ -18,7 +32,7 @@ const Hero = () => {
         <h6 className='h6-text mb-3'>Hey, I am John</h6>
         <h1 className='h1-text'>I develop dynamic and User-Centered Web Applications</h1>
         <p className='p-text w-100'>My expertise spans both front-end and back-end development, enabling me to build comprehensive solutions that meet diverse client needs.</p>
-        <button className='hero-button '>Get In Touch</button>
+        <button className='hero-button ' onClick={handleButtonClick} disabled={isLoading}>{isLoading ? <img src={loading} alt="Loading..." className="loading-img" /> : 'Get In Touch'}</button>
       </div>
       <div className='mobile'>
         <img src={image} alt="home-image" className='img-fluid 50' />

@@ -24,21 +24,25 @@
 
 @media (max-width:1200px){
 
+    .sub-head{
+        font-size: 12px;
+    }
+
     .box{
         background-color: rgb(245, 252, 255);
         ;
     }
     .box-img{
-        width: 40px;
+        width: 42px;
         padding: 10px;
     }
     .box-h4{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 700;
     }
     
     .box-p{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -46,5 +50,11 @@
     .flex{
         flex-direction: column;
     }
+
+    .box-h4{
+        font-size: 18px;
+        font-weight: 700;
+    }
 }
+
 

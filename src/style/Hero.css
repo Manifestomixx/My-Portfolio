@@ -2,6 +2,11 @@
   background-color: rgb(245, 252, 255); 
 }
 
+.loading-img{
+  width: 40px;
+  height: 20px;
+}
+
 /* Desktop Screen */
 @media (min-width:1200px){
   
@@ -49,7 +54,7 @@
   .h1-text{
     font-weight: 700;
     font-style: normal;
-    font-size: 23px;
+    font-size: 22px;
   }
   
   .p-text{
